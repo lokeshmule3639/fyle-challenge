@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Github Repo Listings</title>
+  </head>
+  <body>
+    <!-- Starting of the profile section -->
+    <div class="intro-div">
+      <div class="avatar-section">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg"
+          alt="Avatar"
+          class="avatar"
+        />
+        <a href="" class="github-link">
+          <button>Github link</button>
+        </a>
+      </div>
+
+      <div>
+        <h1>John Doe</h1>
+        <p>Bio here</p>
+        <p>Location</p>
+        <p id="twitter">Twitter:</p>
+        <p id="public-repos">Public Repositories:</p>
+      </div>
+    </div>
+    <!-- Ending of the profile section -->
+
+    <!-- Starting of repos -->
+    <div class="repo-container">
+      <div class="block">
+        <div class="card">
+          <h2 class="card-heading">Card Heading</h2>
+          <p class="card-paragraph">
+            This is a sample card with some content in the paragraph. 
+          </p>
+          <!-- Starting of topic section -->
+          <div class="topics-section">
+            <span class="topic">Topic</span>
+          </div>
+          <!-- Ending of topic section -->
+        </div>
+      </div>
+    </div>
+    <!-- Ending of repos -->
+
+    <!-- Starting of the search bar -->
+    <div class="search-bar">
+      <input
+        type="text"
+        id="githubUsername"
+        placeholder="Enter GitHub username"
+      />
+      <select id="reposPerPage">
+        <option value="10">Show 10 repositories</option>
+        <option value="20">Show 20 repositories</option>
+        <option value="30">Show 30 repositories</option>
+        <option value="50">Show 50 repositories</option>
+        <option value="100">Show 100 repositories</option>
+      </select>
+      <label for="page">Page:</label>
+      <select id="page">
+        <!-- Added options for pages 1 to 9 -->
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+
+      <button onclick="searchUser()">Search</button>
+    </div>
+    <!-- Ending of the search bar -->
+
+    <!-- Loading indicator -->
+    <div id="loading" style="display: none">Loading...</div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
